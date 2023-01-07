@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite + TS</title>
+  </head>
+  <body class="w-screen">
+    <header class="w-full p-5 bg-red-100 flex justify-between md: items-center">
+      <img src="/public/logo.svg" class="h-10" />
+      <svg
+        class="h-6 inline"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </header>
+    <div
+      class="px-5 py-5 gap-7 flex justify-center items-center flex-col bg-[url('/public/hero.jpg')] bg-cover"
+    >
+      <h1 class="text-white font-bold text-4xl text-center">
+        New arrivals are here
+      </h1>
+      <p class="text-white font-normal text-2xl text-center">
+        The new arrivals have, well, newly arrived. Check out the latest options
+        from our summer small-batch release while they are still in stock
+      </p>
+      <button class="px-16 py-4 text-2xl text-white bg-blue-500 rounded-lg">
+        Shop new arrivals
+      </button>
+    </div>
+    <div class="p-12 gap-2 flex justify-center items-center flex-col">
+      <h3 class="font-bold text-2xl">Trending Products</h3>
+      <a class="flex flex-row gap-2" href="#">
+        <p class="text-blue-800">Shop the Collection</p>
+        <img src="/public/Arrow Right.svg" />
+      </a>
+    </div>
+    <div class="p-5 overflow-x-auto flex w-full h-full">
+      <div class="w-full min-w-full flex flex-col items-center">
+        <img
+          class="p-5 w-80 h-96 rounded-[40px]"
+          src="/public/trending-1.jpg"
+        />
+
+        <span class="font-bold text 2-xl"> Mens Ensemble</span>
+        <span>Business Casual</span>
+        <p class="font-medium">$240</p>
+      </div>
+      <div class="w-full min-w-full flex flex-col items-center">
+        <img
+          class="p-5 w-80 h-96 rounded-[40px]"
+          src="/public/trending-2.jpg"
+        />
+
+        <span class="font-bold text 2-xl"> Air Jordans White</span>
+        <span>Business Casual</span>
+        <p class= "font-medium"> $195</p>
+      </div>
+      <div class="w-full min-w-full flex flex-col items-center">
+        <img
+          class="p-5 w-80 h-96 rounded-[40px]"
+          src="/public/trending-3.jpg"
+        />
+
+        <span class="font-bold text 2-xl"> Women Ensemble</span>
+        <span>Autumn Collection</span>
+        <p class="font-medium">$215</p>
+      </div>
+      <div class="w-full min-w-full flex flex-col items-center">
+        <img
+          class="p-5 w-80 h-96 rounded-[40px]"
+          src="/public/trending-4.jpg"
+        />
+
+        <span class="font-bold text 2-xl"> Day at the Beach</span>
+        <span>Summer Collection</span>
+        <p class="font-medium">$145</p>
+      </div>
+    </div>
+    <div class= "border-2"></div>
+    <div class=" px-4 py-5 flex flex-col items-center gap-5">
+      <img class="h-24" src="/public/Return.png" />
+      <h4 class=" mt-3 font-bold text-2xl">Free Returns</h4>
+      <p class=" text-slate-400 p-5 font-normal text-xl">
+        Not what you expected? Place it back in the parcel and attach the
+        pre-paid postage stamp.
+      </p>
+    </div>
+    <div class=" px-4 py-5 flex flex-col items-center gap-5">
+      <img class="h-24" src="/public/Delivery.png" />
+      <h4 class="font-bold text-2xl">Same day delivery</h4>
+      <p class=" text-slate-400 p-5 font-normal text-xl">
+        We offer a delivery service that was never been done before. Checkout today and receive your products within hours.
+      </p>
+    </div>
+    <div class=" px-4 py-5 flex flex-col items-center gap-5">
+      <img class="h-24" src="/public/Planet.png" />
+      <h4 class="font-bold text-2xl">For the planet</h4>
+      <p class=" text-slate-400 p-5 font-normal text-xl">
+        We have pledged 1% of sales to the preservation and restoration of the natural environment.
+      </p>
+    </div>
+    <div class= "border-2"></div>
+    <div class=" space-y-4 px-5 flex items-center flex-col">
+      <h4 class="mt-5 font-semibold text-2xl">Sign up for our newsletter</h4>
+      <p class="text-slate-400 p-5">The latest deals and savings, sent to your inbox weekly</p>
+      <input type="text" class= "  px-16 py-4 placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-500 rounded-lg">
+      <button class="px-16 py-4 text-2xl text-white bg-blue-600 rounded-lg">
+        Sign up
+      </button>
+      <div class="border-2"></div>
+      <div class="flex items-center flex-col">
+       <p class="text-slate-400 ">© 2022 Cool Fashion Inc.</p> 
+       <span class=" text-slate-400 text-center " >All rights reserved.</span>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
